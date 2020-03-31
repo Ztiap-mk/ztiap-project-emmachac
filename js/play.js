@@ -8,55 +8,55 @@ function play() {
 
     // mod 01
     if (mode == 1) {
-      fps = 60;
-      scoreText = new txt(480, 100, "25px", "black", "0");
-      
-      chapadielko1 = new chapadlo(100, 200, 200);
-      chapadielko1Btn = new btn(125, 175, 200, 400);
-  
-      chapadielko2 = new chapadlo(200, 200, 200);
-      chapadielko2Btn = new btn(225, 275, 200, 400);
-  
-      chapadielko3 = new chapadlo(300, 200, 200);
-      chapadielko3Btn = new btn(325, 375, 200, 400);
-  
-      chapadielko4 = new chapadlo(400, 200, 200);
-      chapadielko4Btn = new btn(425, 475, 200, 400);
-  
-      redrawInterval = setInterval(updateGameAreaPlay1, 1000 / fps);
+        fps = 60;
+        scoreText = new txt(480, 100, "25px", "black", "0");
+        
+        chapadielko1 = new chapadlo(100, 200, 200);
+        chapadielko1Btn = new btn(125, 175, 200, 400);
+    
+        chapadielko2 = new chapadlo(200, 200, 200);
+        chapadielko2Btn = new btn(225, 275, 200, 400);
+    
+        chapadielko3 = new chapadlo(300, 200, 200);
+        chapadielko3Btn = new btn(325, 375, 200, 400);
+    
+        chapadielko4 = new chapadlo(400, 200, 200);
+        chapadielko4Btn = new btn(425, 475, 200, 400);
+    
+        redrawInterval = setInterval(updateGameAreaPlay1, 1000 / fps);
     }
   
     // mód 02
     if (mode == 2) {
-      fps = 3;
-      sec = 60;
-      scoreTextMode02 = new txt(500, 20, "25px", "black", "0");
-      timeLeft = new txt(10, 20, "25px", "black", "0");
-      
-      chapadielko1 = new chapadlo(30, 180, 200);
-      pena1 = new pena(68, 370, 36, 30);
-  
-      chapadielko2 = new chapadlo(200, 140, 200);
-      pena2 = new pena(235, 320, 36, 30);
-  
-      chapadielko3 = new chapadlo(320, 140, 200);
-      pena3 = new pena(355, 315, 36, 30);
-  
-      chapadielko4 = new chapadlo(460, 180, 200);
-      pena4 = new pena(500, 360, 36, 30);
-  
-      chapadielko5 = new chapadlo(100, 80, 125);
-  
-      chapadielko6 = new chapadlo(175, 120, 125);
-  
-      chapadielko7 = new chapadlo(300, 80, 125);
-  
-      chapadielko8 = new chapadlo(500, 80, 125);
-  
-      chapadielko9 = new chapadlo(220, 25, 90);
-      chapadielko9.width = 60;
-  
-      redrawInterval = setInterval(updateGameAreaPlay2, 1000 / fps);
+        fps = 3;
+        sec = 60;
+        scoreTextMode02 = new txt(500, 20, "25px", "black", "0");
+        timeLeft = new txt(10, 20, "25px", "black", "0");
+        
+        chapadielko1 = new chapadlo(30, 180, 200);
+        pena1 = new pena(68, 370, 36, 30);
+    
+        chapadielko2 = new chapadlo(200, 140, 200);
+        pena2 = new pena(235, 320, 36, 30);
+    
+        chapadielko3 = new chapadlo(320, 140, 200);
+        pena3 = new pena(355, 315, 36, 30);
+    
+        chapadielko4 = new chapadlo(460, 180, 200);
+        pena4 = new pena(500, 360, 36, 30);
+    
+        chapadielko5 = new chapadlo(100, 80, 125);
+    
+        chapadielko6 = new chapadlo(175, 120, 125);
+    
+        chapadielko7 = new chapadlo(300, 80, 125);
+    
+        chapadielko8 = new chapadlo(500, 80, 125);
+    
+        chapadielko9 = new chapadlo(220, 25, 90);
+        chapadielko9.width = 60;
+    
+        redrawInterval = setInterval(updateGameAreaPlay2, 1000 / fps);
     }
   }
 
