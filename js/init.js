@@ -88,3 +88,31 @@ function preloadAssets() {
     this.imgPena = new Image();
     this.imgPena.src = "../assets/pictures/particles/pena.png";
   }
+
+// premenná pre canvas -----------------------------------------------------------------------------------------
+
+var gameArea = {
+
+    canvas: document.querySelector("canvas"), // ziskanie elementu canvas
+    nadpis: document.querySelector("h1"), // ziskanie elementu nadpis
+    frameNo: 0,
+    menu: 0,
+  
+    createCanvas: function() {
+
+        this.context = this.canvas.getContext("2d"); // zikanie contextu - obsahu canvas
+        this.canvas.width = 613.9;
+        this.canvas.height = 434;
+      
+        // offset od vrchu stranky po canvas
+        this.oX = parseInt(window.getComputedStyle(this.canvas).marginLeft);
+        this.oY =
+            parseInt(window.getComputedStyle(this.canvas).marginTop) +
+            parseInt(window.getComputedStyle(this.nadpis).height);
+    },
+  
+    // cistenie canvas
+    clear: function() {
+        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    }
+  };
